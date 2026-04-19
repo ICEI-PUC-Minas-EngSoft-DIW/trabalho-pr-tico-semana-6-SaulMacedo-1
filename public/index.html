@@ -4,77 +4,90 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <title>Home - WebFly</title>
-<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
 <body>
 
-<header class="site-header">
-<div class="logo">WEBFLY</div>
-<nav class="main-nav">
-<ul>
-<li><a href="#">Início</a></li>
-<li><a href="#">Serviços</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Contato</a></li>
-<li><a href="login.html">Login</a></li>
-</ul>
-</nav>
+<header class="bg-dark text-white py-3">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    
+    <div class="fs-4 fw-bold">WEBFLY</div>
+
+    <ul class="nav flex-column flex-md-row gap-2">
+      <li class="nav-item"><a class="nav-link text-white" href="#">Início</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">Serviços</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">Contato</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="login.html">Login</a></li>
+    </ul>
+
+  </div>
 </header>
 
-<main class="site-main">
-<section class="hero">
-<article class="hero-text">
-<h1>WebFly</h1>
-<p>Sua solução completa para voar na web!</p>
-<p>Descubra os melhores lugares para visitar ao redor do mundo com a WebFly!</p>
-<button class="btn-primario">Saiba mais</button>
-</article>
+<main>
+<section class="container py-5">
+  <div class="row align-items-center text-center text-md-start">
 
-<article class="hero-image">
-<img src="https://th.bing.com/th/id/R.884946e911b8b546eed7640b496ddf7e?rik=JKxT%2f1DTMPXcJA&pid=ImgRaw&r=0" alt="Imagem destaque">
-</article>
+    <div class="col-md-6">
+      <h1 class="display-4">WebFly</h1>
+      <p>Sua solução completa para voar na web!</p>
+      <p>Descubra os melhores lugares para visitar ao redor do mundo com a WebFly!</p>
+      <button class="btn btn-primary">Saiba mais</button>
+    </div>
+
+    <div class="col-md-6">
+      <img src="https://th.bing.com/th/id/R.884946e911b8b546eed7640b496ddf7e?rik=JKxT%2f1DTMPXcJA&pid=ImgRaw&r=0"
+           class="img-fluid rounded" alt="Imagem destaque">
+    </div>
+
+  </div>
 </section>
 
-<section class="destaques">
-<h2>Artigos em destaque</h2>
-<div class="artigos-container">
-<article class="artigo">
-<img src="https://www.farejaviagens.com.br/wp-content/uploads/2024/08/Praia-do-forte-Cabo-frio-Rio-de-Janeiro.jpg" alt="Artigo 1">
-<h3>Cabo Frio</h3>
-<p>Conheça as belas praias e a rica cultura da cidade de Cabo Frio, no Rio de Janeiro.</p>
-<button class="btn-secundario">Ler mais</button>
-</article>
+<section class="container py-5">
+  <h2 class="mb-4">Artigos em destaque</h2>
 
-<article class="artigo">
-<img src="https://www.passeios.org/wp-content/uploads/2016/11/Dunas-J-scaled.jpg" alt="Artigo 2">
-<style css class="width: 200px ;height: 300px;">
-</style>
-<h3>Dunas de Jericoacoara</h3>
-<p>Descubra as incríveis dunas de areia e a paisagem única da região de Jericoacoara, no Ceará.</p>
-<button class="btn-secundario">Ler mais</button>
-</article>
+  <div class="row g-4">
 
-<article class="artigo">
-<img src="https://pureviagem.com.br/wp-content/uploads/2020/01/Gramado-2.jpg" alt="Artigo 3">
-<style css class= img src="width: 200px ;height: 300px;">
-</style><h3>Gramado</h3>
-<p>Conheça a cidade de Gramado, no Rio Grande do Sul, famosa por suas paisagens alpinas e clima temperado.</p>
-<button class="btn-secundario">Ler mais</button>
-</article>
-</div>
+    <div class="col-md-4">
+      <div class="bg-light p-3 rounded h-100">
+        <img src="https://www.farejaviagens.com.br/wp-content/uploads/2024/08/Praia-do-forte-Cabo-frio-Rio-de-Janeiro.jpg"
+             class="img-fluid mb-2 rounded" style="height:200px; object-fit:cover;">
+        <h3>Cabo Frio</h3>
+        <p>Conheça as belas praias e a rica cultura.</p>
+        <button class="btn btn-success">Ler mais</button>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="bg-light p-3 rounded h-100">
+        <img src="https://www.passeios.org/wp-content/uploads/2016/11/Dunas-J-scaled.jpg"
+             class="img-fluid mb-2 rounded" style="height:200px; object-fit:cover;">
+        <h3>Jericoacoara</h3>
+        <p>Descubra as incríveis dunas.</p>
+        <button class="btn btn-success">Ler mais</button>
+      </div>
+    </div>
+
+    
+    <div class="col-md-4">
+      <div class="bg-light p-3 rounded h-100">
+        <img src="https://pureviagem.com.br/wp-content/uploads/2020/01/Gramado-2.jpg"
+             class="img-fluid mb-2 rounded" style="height:200px; object-fit:cover;">
+        <h3>Gramado</h3>
+        <p>Famosa por paisagens e clima europeu.</p>
+        <button class="btn btn-success">Ler mais</button>
+      </div>
+    </div>
+
+  </div>
 </section>
-
-
 
 </main>
 
-<footer class="site-footer">
-<section class="footer-section">
-<article class="footer-article">
-<p>© 2026 WebFly. Todos os direitos reservados.</p>
-<p><a href="#">Sobre</a> | <a href="#">Termos</a> | <a href="#">Contato</a></p>
-</article>
-</section>
+<footer class="bg-dark text-white text-center py-3">
+  <p>© 2026 WebFly. Todos os direitos reservados.</p>
 </footer>
 
 </body>
